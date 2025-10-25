@@ -1,0 +1,9 @@
+id,title,company,location,sector,education_level,skills,description
+1,Software Engineering Intern,TechCorp,Bangalore,Technology,Undergraduate,"Python, Java, Machine Learning, Data Structures","Work on developing scalable software solutions using Python and Java. Experience in machine learning and data structures required."
+2,Data Science Intern,DataInsights,Mumbai,Data Science,Graduate,"Python, R, Statistics, SQL","Analyze large datasets using Python and R. Knowledge of statistics and SQL is essential for this role."
+3,Marketing Intern,MarketPro,Delhi,Marketing,Undergraduate,"Digital Marketing, SEO, Content Creation","Assist in digital marketing campaigns, SEO optimization, and content creation for various projects."
+4,Finance Analyst Intern,FinSolutions,Chennai,Finance,Graduate,"Financial Modeling, Excel, Accounting","Perform financial analysis, modeling, and reporting using Excel and accounting principles."
+5,UI/UX Design Intern,DesignStudio,Pune,Design,Undergraduate,"Figma, Adobe XD, User Research","Design user interfaces and conduct user research using tools like Figma and Adobe XD."
+6,Cybersecurity Intern,SecureNet,Hyderabad,Cybersecurity,Graduate,"Network Security, Ethical Hacking, Python","Focus on network security, ethical hacking, and scripting in Python for security tools."
+7,HR Intern,PeopleFirst,Kolkata,Human Resources,Undergraduate,"Recruitment, Employee Relations, Communication","Handle recruitment processes, employee relations, and internal communications."
+8,Environmental Science Intern,EcoWatch,Bangalore,Environmental,Undergraduate,"Data Analysis, GIS, Environmental Policy","Conduct data analysis and use GIS for environmental monitoring and policy research."

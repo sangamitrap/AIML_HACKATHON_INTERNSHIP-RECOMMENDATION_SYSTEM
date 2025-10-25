@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Internship Recommendation System</h1>
+            <p>Fill out the form below to get personalized internship recommendations based on your profile.</p>
+        </header>
+        
+        <form id="student-form" class="student-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+                <label for="education-level">Education Level:</label>
+                <select id="education-level" required>
+                    <option value="">Select your education level</option>
+                    <option value="Undergraduate">Undergraduate</option>
+                    <option value="Graduate">Graduate</option>
+                    <option value="PhD">PhD</option>
+                    <option value="MBA">MBA</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="M.Tech">M.Tech</option>
+                    <option value="B.Com">B.Com</option>
+                    <option value="M.Com">M.Com</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="preferred-location">Preferred Location:</label>
+                <input type="text" id="preferred-location" placeholder="e.g., Bangalore, Mumbai" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="sector-interest">Sector of Interest:</label>
+                <input type="text" id="sector-interest" placeholder="e.g., Technology, Marketing" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="skills">Skills (comma-separated):</label>
+                <textarea id="skills" placeholder="e.g., Python, Java, Machine Learning" required></textarea>
+            </div>
+            
+            <div class="filters-section">
+                <h3>Advanced Filters (Optional)</h3>
+                <div class="form-group">
+                    <label for="min-stipend">Minimum Stipend (₹):</label>
+                    <input type="number" id="min-stipend" placeholder="e.g., 5000" min="0">
+                </div>
+                
+                <div class="form-group">
+                    <label for="max-stipend">Maximum Stipend (₹):</label>
+                    <input type="number" id="max-stipend" placeholder="e.g., 50000" min="0">
+                </div>
+                
+                <div class="form-group">
+                    <label for="duration">Duration Preference:</label>
+                    <select id="duration">
+                        <option value="">Any</option>
+                        <option value="1-2 months">1-2 months</option>
+                        <option value="3-6 months">3-6 months</option>
+                        <option value="6+ months">6+ months</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="work-type">Work Type:</label>
+                    <select id="work-type">
+                        <option value="">Any</option>
+                        <option value="Work From Home">Work From Home</option>
+                        <option value="In-Office">In-Office</option>
+                        <option value="Hybrid">Hybrid</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button type="submit" id="get-recommendations">Get Recommendations</button>
+        </form>
+        
+        <div id="loading" class="loading hidden">Loading recommendations...</div>
+        
+        <div id="recommendations" class="recommendations hidden">
+            <h2>Top Internship Recommendations</h2>
+            <div class="cards-container" id="cards-container">
+                <!-- Recommendations will be inserted here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

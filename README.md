@@ -13,9 +13,17 @@ This project implements a machine learning model to recommend the top 3-5 intern
 
 ## Data
 
-- **whole_Internshala_scraped2.csv**: Real scraped dataset from Internshala with 6694 internship listings, including fields like Title, Company Name, Location, Stipend, Duration, etc.
+- **whole_Internshala_scraped2.csv**: Real scraped dataset from Internshala with 6694 internship listings, including fields like Title, Company Name, Location, Stipend, Duration, Links, etc.
 - **students.csv**: Sample student profiles with skills, education, location, and sector preferences.
-- **recommendations.json**: Generated recommendations for each student based on the model.
+- **recommendations.csv**: Generated recommendations for each student based on the model.
+
+## Documentation
+
+For detailed project information, check the `docs/` folder:
+- **architecture.md**: System architecture and components.
+- **data_dictionary.md**: Description of datasets and fields.
+- **presentation.md**: Project presentation outline.
+- **sdg_mapping.md**: Mapping to Sustainable Development Goals (SDGs).
 
 ## Installation
 
@@ -24,13 +32,18 @@ This project implements a machine learning model to recommend the top 3-5 intern
    pip install -r requirements.txt
    ```
 
-2. Start the Flask API:
+2. Run the recommendation script to generate recommendations in CSV:
+   ```
+   python internship_recommender.py
+   ```
+
+3. Start the Flask API:
    ```
    python app.py
    ```
    The API will run on `http://localhost:5000`.
 
-3. Serve the frontend:
+4. Serve the frontend:
    ```
    python -m http.server 8000
    ```
